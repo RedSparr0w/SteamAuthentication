@@ -2,7 +2,23 @@
 
 SteamAuthentication is a basic set of PHP files that enable users to login using their steam account to view protected content on your website. it creates a session using their steamid as the sessionID and checks for the session when a user visits the page. It also includes a file which allows you to use their profile information such as their avatar and online status.
 
-See a demo at http://bensmith.in/demo.php
+See a demo at http://bensmith.in/steam/
+
+##Gambling Sites
+
+I nor Steam condone the use of this library for the purpose of gambling sites. Any sites that use this library for this purpose violates their API agreement and will receive notices from Steam to cease operations.
+
+Read more here:
+http://store.steampowered.com/news/22883/
+
+By downloading this library you agree that you will not use it for any gambling or illegal activity.
+
+##Issues
+
+For Issues relating directly to this SteamAuthentication Library feel free to create a Github Issue.
+
+**For any general PHP or SQL problems please use [stackoverflow](http://stackoverflow.com/) or similar,
+else we will generally close these straight away if created here, thanks!**
 
 ##Download
 
@@ -56,24 +72,20 @@ By default, the logout & login buttons reload the current page, this can be chan
 
 ###Choosing a login button style
 
-by default `loginbutton();` will display ![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png)
+by default `loginbutton();` will display ![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_02.png)
 
 You can choose the style of the login button by specifying a variable like the following:
 
-loginbutton("small"); 
+loginbutton("rectangle"); 
 
-![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_small.png)
+![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png)
 
 
 loginbutton();
 -OR-
-loginbutton("large_no"); 
+loginbutton("square"); 
 
-![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png)
-
-loginbutton("large"); 
-
-![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_border.png)
+![image](https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_02.png)
 
     
 ##Using Profile Variables
